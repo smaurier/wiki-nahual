@@ -12,7 +12,6 @@ function fetchData() {
 #### Bon exemple
 ```javascript
 function fetchData() {
-function fetchData() {
     console.log('Fetching data...');
     // Plus tard, ajoutez le cache seulement si nécessaire.
 }
