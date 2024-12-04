@@ -10,6 +10,8 @@
 ---
 
 ## Phase 1 : Consolidation des fondamentaux (2-3 mois)
+### **Principes de développement**
+- [ ] **Solid, Yagni, Dry, Kiss**
 
 ### **Frontend**
 #### **Fondamentaux du web**
