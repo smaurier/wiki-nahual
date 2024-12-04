@@ -35,12 +35,6 @@ const sidebars = {
       label: 'Progression et méthodologie perso',
       items: [
         'progression/todo',
-      ]
-    },
-    {
-      type: 'category',
-      label: 'HTML avancé',
-      items: [
         'progression/html_avance/A11y et SEO Guide',
       ]
     },

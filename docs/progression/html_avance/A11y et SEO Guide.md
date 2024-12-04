@@ -1,140 +1,188 @@
-# **HTML avancé**
 
-## **1. Accessibilité (a11y)**
+# HTML Avancé : Guide Exhaustif
+
+## Table des matières
+1. [Accessibilité (a11y)](#1-accessibilité-a11y)
+    - [Structure sémantique et logique de navigation](#11-structure-sémantique-et-logique-de-navigation)
+    - [Navigation au clavier et focus](#12-navigation-au-clavier-et-focus)
+    - [Rôles ARIA avancés](#13-rôles-aria-avancés)
+    - [Exercices pratiques avancés](#exercices-pratiques-avancés)
+2. [SEO Avancé](#2-seo-avancé)
+    - [Optimisation des contenus](#21-optimisation-des-contenus)
+    - [Optimisation des performances (Core Web Vitals)](#22-optimisation-des-performances-core-web-vitals)
+    - [Exercices SEO avancés](#exercices-seo-avancés)
+3. [Microdata pour un balisage sémantique avancé](#3-microdata-pour-un-balisage-sémantique-avancé)
+    - [Microdata complexe](#31-microdata-complexe)
+    - [Exercices Microdata avancés](#exercices-microdata-avancés)
+4. [Ressources supplémentaires](#ressources-supplémentaires)
+
+---
+
+## 1. Accessibilité (a11y)
+
 L'accessibilité garantit que les pages web soient utilisables par tous, y compris les personnes ayant des handicaps sensoriels, physiques ou cognitifs.
- 
 
-### **1.1. Structure sémantique et navigation**
+### 1.1. Structure sémantique et logique de navigation
 
-#### **Importance :**
+#### Structure sémantique approfondie
+- **Balises de conteneur :**
+    - `<header>` : En-têtes (logo, navigation principale, titre de la page).
+    - `<footer>` : Informations additionnelles (mentions légales, crédits).
+    - `<main>` : Contenu principal unique par page.
+    - `<aside>` : Contenus connexes (widgets, publicités).
 
-  - Permet aux lecteurs d'écran (comme NVDA ou JAWS) d'identifier clairement le contenu.
-  - Facilite l'organisation logique pour les moteurs de recherche et les utilisateurs.
-  
-#### **Concepts :**
+- **Balises de contenu :**
+    - `<article>` : Contenu autonome (articles de blog, produits).
+    - `<section>` : Regroupe des contenus thématiquement liés.
 
-  1. **Balises sémantiques :**
-    - Utiliser des balises comme `<header>`, `<main>`, `<section>`, `<article>`, `<aside>`, et `<footer>`.
-    - Hiérarchiser les titres correctement (`<h1>` pour le titre principal, puis `<h2>`, etc.).
-  2. **Navigation claire :**
-    - Ajouter un conteneur `<nav>` pour regrouper les liens de navigation.
-    - Exemples :
- 
+#### Exemple structuré
+```html
+<header>
+    <h1>Actualités du Web</h1>
+</header>
+<main>
+    <section>
+        <h2>HTML5</h2>
+        <article>
+            <h3>Introduction au HTML5</h3>
+            <p>Le HTML5 est...</p>
+        </article>
+        <article>
+            <h3>Balises multimédia</h3>
+            <p>Les balises comme <code>&lt;audio&gt;</code> et <code>&lt;video&gt;</code>...</p>
+        </article>
+    </section>
+</main>
+```
 
-### **1.2. ARIA et attributs spécifiques**
+---
 
-#### **Importance :**
-Les attributs ARIA comblent les lacunes des balises HTML natives pour décrire des composants dynamiques (comme les menus ou carrousels).
-#### **Concepts :**
+### 1.2. Navigation au clavier et focus
 
-  1. **Attributs courants :**
-    - `aria-label` : Donne un nom descriptif.
-    - `aria-hidden` : Cache un élément des technologies d'assistance.
-    - `role` : Décrit la fonction d'un élément.
-  2. **Exemple pratique :**
-#### **Exercice avancé :**
-Créez une page avec un menu déroulant accessible. Assurez-vous que :
-  - Le bouton utilise `aria-expanded`.
-  - Le menu est masqué via `aria-hidden` lorsque fermé.
- 
+#### Navigation clavier
+1. Tous les éléments interactifs (liens, boutons, formulaires) doivent être accessibles via Tab.
+2. Gestion de l’ordre de navigation avec `tabindex` :
+    - `tabindex="0"` : Ordre DOM par défaut.
+    - `tabindex="-1"` : Exclu de la navigation clavier.
 
-### **1.3. Couleurs et contrastes**
+#### Gestion du focus
+- Styles visuels pour indiquer le focus :
+```css
+button:focus {
+    outline: 2px solid #00f;
+}
+```
 
-#### **Règles essentielles :**
+- Exemple pour un modal :
+```html
+<div id="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <h2 id="modalTitle">Titre du Modal</h2>
+    <button onclick="closeModal()">Fermer</button>
+</div>
+```
 
-  1. Respecter un ratio de contraste d'au moins 4.5:1 pour le texte normal et 3:1 pour le texte large (WCAG 2.1).
-  2. Fournir une alternative au contenu dépendant de la couleur.
-#### **Outils :**
+---
 
-  - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
- 
+### 1.3. Rôles ARIA avancés
 
-### **Exercices : Accessibilité**
+#### Cas pratiques
+- **Grille interactive** :
+```html
+<div role="grid">
+    <div role="row">
+        <div role="gridcell">Cellule 1</div>
+        <div role="gridcell">Cellule 2</div>
+    </div>
+</div>
+```
 
-  1. Ajoutez une navigation avec :
-    - Une structure sémantique complète.
-    - Des attributs ARIA pertinents.
-  2. Utilisez un outil comme Lighthouse (dans Chrome DevTools) pour analyser votre page.
- 
+- **Alertes dynamiques** :
+```html
+<div role="alert">Formulaire soumis avec succès !</div>
+```
 
-## **2. SEO (Search Engine Optimization)**
-Le SEO consiste à optimiser une page pour qu'elle soit mieux référencée par les moteurs de recherche.
- 
+---
 
-### **2.1. Balises méta et titres**
+### Exercices pratiques avancés
+1. Crée un menu de navigation avec des sous-menus accessibles :
+    - Utilise `aria-expanded` et `tabindex` pour indiquer les états.
+2. Implémente un modal dynamique avec focus géré.
 
-#### **Concepts clés :**
+---
 
-  1. **Méta description :**
-    - Fournit un résumé concis de la page.
-    - Longueur recommandée : 50-160 caractères.Exemple :
-  2. **Balise `<title>` :**
-    - Doit être unique et contenir des mots-clés.
-    - Longueur idéale : 50-60 caractères.
-  3. **Balises Open Graph :**
-    - Optimisent l'affichage des pages sur les réseaux sociaux.Exemple :
- 
+## 2. SEO Avancé
 
-### **2.2. Optimisation des images**
+### 2.1. Optimisation des contenus
 
-  1. **Compression :**
-    - Utiliser des outils comme [TinyPNG](https://tinypng.com/).
-  2. **Texte alternatif :**
-    - Décrire chaque image en tenant compte de son contexte.
-Exemple :
- 
+#### Balises importantes
+- `<meta name="description" content="Résumé concis">`
+- `<title>Page Optimisée</title>`
 
-### **2.3. Fichiers robots.txt et sitemap.xml**
+#### Rich snippets et données structurées
+```html
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://nahual.fr",
+    "name": "Nahual Studio"
+}
+</script>
+```
 
-#### **Robots.txt :**
-Permet d'empêcher certaines pages d'être explorées.
-Exemple :
-#### **Sitemap.xml :**
-Liste des URL importantes pour les moteurs de recherche.
-Exemple :
- 
+---
 
-### **Exercices : SEO**
+### 2.2. Optimisation des performances (Core Web Vitals)
 
-  1. Créez une page d'accueil avec :
-    - Une balise `<title>` optimisée.
-    - Une description SEO correcte.
-    - Des images avec attributs `alt`.
-  2. Analysez votre page avec [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools).
- 
+#### Principaux indicateurs
+1. **LCP** (Largest Contentful Paint) : Temps de chargement du plus grand élément.
+2. **FID** (First Input Delay) : Temps de réponse après une interaction.
+3. **CLS** (Cumulative Layout Shift) : Limiter les sauts visuels.
 
-## **3. Microdata pour un balisage sémantique**
-Les Microdata enrichissent le HTML avec des métadonnées standardisées.
- 
+#### Chargement différé
+```html
+<img src="image.jpg" alt="Exemple" loading="lazy">
+```
 
-### **3.1. Syntaxe Microdata**
+---
 
-#### **Principaux attributs :**
+### Exercices SEO avancés
+1. Crée une page produit :
+    - Rich snippets pour avis et prix.
+    - Images optimisées avec `srcset`.
+2. Analyse avec [PageSpeed Insights](https://pagespeed.web.dev/).
 
-  1. `itemscope` : Définit une entité.
-  2. `itemtype` : Définit le type de l’entité (via Schema.org).
-  3. `itemprop` : Spécifie les propriétés.Exemple :
- 
+---
 
-### **3.2. Types communs de schémas**
+## 3. Microdata pour un balisage sémantique avancé
 
-  1. **Article :**
-Exemple :
-  2. **Produit :**
-Exemple :
- 
+### 3.1. Microdata complexe
 
-### **Exercices : Microdata**
+#### Schéma produit
+```html
+<div itemscope itemtype="https://schema.org/Product">
+    <span itemprop="name">Ordinateur Portable</span>
+    <img itemprop="image" src="laptop.jpg" alt="Ordinateur">
+    <span itemprop="priceCurrency" content="EUR">€</span>
+    <span itemprop="price">999.99</span>
+</div>
+```
 
-  1. Implémentez un balisage Microdata pour :
-    - Un article de blog avec titre, auteur, date.
-    - Une liste de produits fictifs.
-  2. Testez vos données avec [Google Rich Results Test](https://search.google.com/test/rich-results).
- 
+---
 
-## **Ressources générales**
+### Exercices Microdata avancés
+1. Implémente un schéma Article avec :
+    - Auteur, date, catégorie.
+    - Balisage des commentaires.
 
-  1. [HTML Living Standard (WHATWG)](https://html.spec.whatwg.org/multipage/)
-  2. [Google Lighthouse](https://addons.mozilla.org/fr/firefox/addon/google-lighthouse/)
-  3. [Schema.org Documentation](https://schema.org/)
-  4. [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+---
+
+## Ressources supplémentaires
+1. [MDN Web Docs : Accessibilité](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+2. [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+3. [WCAG Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/)
+
+---
+
+### Remarque importante
+Ce cours couvre les bases et des concepts avancés d'accessibilité, SEO, et Microdata, mais approfondir chaque aspect avec des cas spécifiques et des projets réels est crucial pour atteindre un niveau d’expertise.
