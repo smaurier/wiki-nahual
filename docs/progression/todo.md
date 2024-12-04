@@ -44,11 +44,11 @@
   - Mesurer les performances, le SEO et l'accessibilité.
 
 #### **Graphismes avancés**
-- [ ] **WebGL avec Three.js** :
+- [ ] **WebGL avec Three.js (R3F, intro a WebGPU)** :
   - Création de visualisations 3D interactives.
 - [ ] **Canvas API** :
   - Animation graphique dynamique.
-- [ ] **GSAP ou Framer Motion** :
+- [ ] **GSAP et Framer Motion** :
   - Maîtrise des animations avancées.
 
 #### **Rendering avancé**
