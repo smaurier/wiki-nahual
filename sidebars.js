@@ -30,6 +30,13 @@ const sidebars = {
         'principes/KISS',
       ]
     },
+    {
+      type: 'category',
+      label: 'Progression et méthodologie perso',
+      items: [
+        'progression/todo',
+      ]
+    },
   ],
 };
 
