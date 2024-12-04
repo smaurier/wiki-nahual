@@ -133,6 +133,7 @@
 - [ ] Single Page Applications (SPA).
 - [ ] Multi-Page Applications (MPA).
 - [ ] Serverless (AWS Lambda, Google Functions).
+- [ ] DDD
 
 #### **Outils front-back**
 - [ ] Apollo Client pour GraphQL.
