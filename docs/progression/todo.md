@@ -24,7 +24,8 @@
 - [ ] **JavaScript avancé** :
   - Closures, prototypes, scope, `this`.
   - ES6+ : Destructuring, Promises, `async/await`, modules.
-  - Event Loop, Hoisting, inheritance.
+  - Event Loop, Hoisting, inheritance.  
+- [ ] **Typescript avancé**
 
 #### **Frameworks frontend**
 - [ ] **React.js** :
