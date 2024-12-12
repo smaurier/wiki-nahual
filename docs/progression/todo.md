@@ -138,7 +138,7 @@
 
 #### **Outils front-back**
 - [ ] Apollo Client pour GraphQL.
-- [ ] Axios ou Fetch pour REST.
+- [ ] Fetch pour REST.
 - [ ] BFF (Backend for Frontend).
 
 ### **Leadership**
