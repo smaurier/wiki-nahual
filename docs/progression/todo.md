@@ -161,8 +161,9 @@
 - [ ] *You Don’t Know JS* (Kyle Simpson).
 - [ ] *Clean Architecture* (Robert C. Martin).
 - [ ] *Test-Driven Development by Example* (Kent Beck).
+- [ ] *Accelerate: The Science of Lean Software and DevOps* (Gene Kim, Jez Humble et Nicole Forsgren )
 
 ### **Plateformes**
-- [ ] Udemy, Coursera, Frontend Masters, Pluralsight.
+- Udemy, Coursera, Frontend Masters, Pluralsight.
 
 ---
