@@ -9,7 +9,7 @@
 
 ---
 
-## Phase 1 : Consolidation des fondamentaux (2-3 mois)
+## Phase 1 : Consolidation des fondamentaux 
 ### **Principes de développement**
 - [ ] **Solid, Yagni, Dry, Kiss**
 
@@ -46,7 +46,7 @@
 - [ ] **Audits Lighthouse** :
   - Mesurer les performances, le SEO et l'accessibilité.
 
-#### **Graphismes avancés**
+#### **Graphismes avancés (passer rapidement)**
 - [ ] **WebGL avec Three.js (R3F, intro a WebGPU)** :
   - Création de visualisations 3D interactives.
 - [ ] **Canvas API** :
@@ -64,7 +64,7 @@
 
 ---
 
-## Phase 2 : Backend et architecture (3-4 mois)
+## Phase 2 : Backend et architecture
 
 ### **Backend**
 #### **Node.js**
