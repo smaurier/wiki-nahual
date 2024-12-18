@@ -46,7 +46,7 @@
 - [ ] **Audits Lighthouse** :
   - Mesurer les performances, le SEO et l'accessibilité.
 
-#### **Graphismes avancés (passer rapidement)**
+#### **Graphismes avancés** (optionnel)
 - [ ] **WebGL avec Three.js (R3F, intro a WebGPU)** :
   - Création de visualisations 3D interactives.
 - [ ] **Canvas API** :
@@ -105,7 +105,75 @@
 
 ---
 
-## Phase 3 : Cloud et DevOps (4-6 mois)
+## Phase 3 : Tests unitaires et tests fonctionnels
+
+### Tests unitaires
+
+- [ ] **Introduction aux tests** :
+  - Concepts : assertions, mocks, stubs, spies.
+  - Différence entre tests unitaires, d'intégration et fonctionnels.
+- [ ] **Outils de tests unitaires** :
+  - Jest : Configuration, structure des tests, gestion des mocks.
+  - Mocha et Chai : Alternatif pour des projets Node.js.
+- [ ] **Typescript et tests** :
+  - Configurer Jest pour Typescript.
+  - Typage strict dans les tests unitaires.
+- [ ] **Meilleures pratiques** :
+  - Structuration des fichiers de test.
+  - Tests pour des fonctions pures (validation, calculs).
+  - Identifier et isoler les composants testables.
+- [ ] **Tests orientés backend** :
+  - Tests de services, middlewares et contrôleurs dans Nest.js ou Express.
+  - Mocking des bases de données avec des bibliothèques comme `mock-knex` ou `mock-mongoose`.
+- [ ] **Couverture de tests** :
+  - Mesurer et améliorer la couverture avec Istanbul ou Coveralls.
+  - Analyser les lacunes dans les tests.
+
+---
+
+### Tests fonctionnels
+
+- [ ] **Introduction aux tests fonctionnels** :
+  - Différence avec les tests unitaires et d'intégration.
+  - Validation du comportement d'une application de bout en bout.
+- [ ] **Outils de tests fonctionnels** :
+  - Cypress : Tests d'interface utilisateur.
+  - Puppeteer ou Playwright : Tests automatisés pour le DOM.
+- [ ] **Tests API** :
+  - Postman : Création de suites de tests pour REST/GraphQL.
+  - Supertest : Tests fonctionnels pour les endpoints Node.js.
+- [ ] **Scénarios utilisateur** :
+  - Écriture de tests pour des workflows complets (connexion, actions utilisateur).
+  - Validation des formulaires, flux de navigation.
+- [ ] **Tests frontend** :
+  - Tests des composants React/Vue/Svelte avec Testing Library.
+  - Simulations d'événements utilisateur : clics, saisies.
+- [ ] **Tests backend** :
+  - Validation des endpoints critiques : authentification, autorisation, CRUD.
+  - Tests des intégrations avec des bases de données ou services tiers (ex : AWS S3).
+
+---
+
+### Bonnes pratiques
+
+- [ ] Écrire des tests avant le développement (TDD).
+- [ ] Gérer des données de test dynamiques avec des fixtures ou des factories.
+- [ ] Automatisation des tests dans un pipeline CI/CD :
+  - Exécuter les tests unitaires et fonctionnels à chaque push.
+- [ ] Rapports d'exécution :
+  - Générer des rapports détaillés pour chaque exécution de tests.
+
+---
+
+### Projets suggérés pour cette phase
+
+1. [ ] Implémenter un test complet (unitaires + fonctionnels) pour une API REST simple avec authentification.
+2. [ ] Créer une suite de tests Cypress pour un formulaire complexe avec validation en temps réel.
+3. [ ] Écrire des tests fonctionnels pour un workflow d'inscription et de connexion sur une application web.
+
+---
+
+## Phase 4 : Cloud et DevOps
 
 ### **Cloud et conteneurisation**
 - [ ] **Docker** :
@@ -127,7 +195,7 @@
 
 ---
 
-## Phase 4 : Intégration complète et leadership (6+ mois)
+## Phase 5 : Intégration complète et leadership
 
 ### **Fullstack**
 #### **Architecture**
