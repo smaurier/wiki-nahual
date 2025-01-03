@@ -11,7 +11,11 @@
 
 ## Phase 1 : Consolidation des fondamentaux 
 ### **Principes de développement**
-- [ ] **Solid, Yagni, Dry, Kiss**
+- [ ] Solid
+- [ ] Yagni
+- [ ] Dry
+- [ ] Kiss
+- [ ] Tell, Don't Ask
 
 ### **Frontend**
 #### **Fondamentaux du web**
