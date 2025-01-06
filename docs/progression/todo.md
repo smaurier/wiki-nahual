@@ -30,6 +30,7 @@
   - ES6+ : Destructuring, Promises, `async/await`, modules.
   - Event Loop, Hoisting, inheritance.
   - Design Patterns en js ( ex: https://openclassrooms.com/fr/courses/7133336-utilisez-des-design-patterns-en-javascript)
+  - ( https://chatgpt.com/share/677c05f0-96e0-800f-a0c6-11274c0ca3c0 )
 - [ ] **Typescript avancé**
 
 #### **Frameworks frontend**
