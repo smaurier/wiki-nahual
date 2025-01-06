@@ -28,7 +28,8 @@
 - [ ] **JavaScript avancé** :
   - Closures, prototypes, scope, `this`.
   - ES6+ : Destructuring, Promises, `async/await`, modules.
-  - Event Loop, Hoisting, inheritance.  
+  - Event Loop, Hoisting, inheritance.
+  - Design Patterns en js ( ex: https://openclassrooms.com/fr/courses/7133336-utilisez-des-design-patterns-en-javascript)
 - [ ] **Typescript avancé**
 
 #### **Frameworks frontend**
