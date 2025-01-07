@@ -31,6 +31,7 @@
   - Event Loop, Hoisting, inheritance.
   - Design Patterns en js ( ex: https://openclassrooms.com/fr/courses/7133336-utilisez-des-design-patterns-en-javascript)
   - ( https://chatgpt.com/share/677c05f0-96e0-800f-a0c6-11274c0ca3c0 )
+  - ( https://chatgpt.com/share/677cf0bf-3550-800f-b8f8-bb1f88d81633 )
 - [ ] **Typescript avancé**
 - [ ] **Programmation fonctionelle**
 
