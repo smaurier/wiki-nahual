@@ -70,6 +70,8 @@
 - [ ] **Progressive Web Apps (PWA)** :
   - Service Workers, cache offline-first, notifications push.
 
+#### **Autre**
+- [ ] **Vite, remplaçant de webpack**
 ---
 
 ## Phase 2 : Backend et architecture
