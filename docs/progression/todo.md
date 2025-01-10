@@ -241,6 +241,9 @@
 - [ ] *Test-Driven Development by Example* (Kent Beck).
 - [ ] *Accelerate: The Science of Lean Software and DevOps* (Gene Kim, Jez Humble et Nicole Forsgren )
 
+### **Liens en tout genres**
+- [ ] https://www.linkedin.com/posts/tony-duchemin_37-conseils-indispensables-pour-devenir-un-activity-7283384626738266112-PiMI?utm_source=share&utm_medium=member_desktop
+
 ### **Plateformes**
 - Udemy, Coursera, Frontend Masters, Pluralsight.
 
