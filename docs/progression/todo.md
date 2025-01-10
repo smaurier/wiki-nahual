@@ -72,6 +72,7 @@
 
 #### **Autre**
 - [ ] **Vite, remplaçant de webpack**
+- [ ] **Commencer contrib d'un projet open source**
 ---
 
 ## Phase 2 : Backend et architecture
