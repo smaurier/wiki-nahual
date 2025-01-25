@@ -36,6 +36,7 @@ const sidebars = {
       items: [
         'progression/todo',
         'progression/html_avance/A11y et SEO Guide',
+        'progression/Design_Patterns'
       ]
     },
   ],

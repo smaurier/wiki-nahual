@@ -1,5 +1,5 @@
 
-# HTML Avancé : Guide Exhaustif
+# HTML Avancé
 
 ## Table des matières
 1. [Accessibilité (a11y)](#1-accessibilité-a11y)
@@ -183,6 +183,3 @@ button:focus {
 3. [WCAG Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ---
-
-### Remarque importante
-Ce cours couvre les bases et des concepts avancés d'accessibilité, SEO, et Microdata, mais approfondir chaque aspect avec des cas spécifiques et des projets réels est crucial pour atteindre un niveau d’expertise.
