@@ -24,7 +24,7 @@
   - Microdata pour un balisage sémantique.
 - [ ] **CSS avancé** :
   - Flexbox, Grid, animations complexes.
-  - Responsive Design : Media queries, Design Systems, TailwindCSS.
+  - Responsive Design, Media queries, Design Systems, TailwindCSS.
 - [ ] **JavaScript avancé** :
   - Closures, prototypes, scope, `this`.
   - ES6+ : Destructuring, Promises, `async/await`, modules.
@@ -55,13 +55,17 @@
   - Mesurer les performances, le SEO et l'accessibilité.
 
 #### **Graphismes avancés** (optionnel)
-- [ ] **WebGL avec Three.js (R3F, intro a WebGPU)** :
+- [ ] **WebGL avec Three.js (R3F (React Three Fiber), intro a WebGPU)** :
   - Création de visualisations 3D interactives.
   - Introduction à WebGPU pour des performances accrues.
+  - ( Essentiel pour s'orienter vers l'interactivité et les expériences immersives : approfondir Three.js et ses intégrations comme R3F).
 - [ ] **Canvas API** :
   - Animation graphique dynamique.
 - [ ] **GSAP et Framer Motion** :
-  - Maîtrise des animations avancées.
+  - Maîtrise des animations avancées pour des animations interactives haut de gamme.
+- [ ] **Visualisation de données** :
+  - D3.js
+  - Chart.js
 
 #### **Rendering avancé**
 - [ ] **Comparaison SSR, SSG, CSR** :
@@ -72,7 +76,7 @@
   - Service Workers, cache offline-first, notifications push.
 
 #### **Autre**
-- [ ] **Vite, remplaçant de webpack**
+- [ ] **Vite, esbuild**
 - [ ] **Commencer contrib d'un projet open source**
 ---
 
@@ -92,10 +96,12 @@
   - API Gateway, orchestration avec Kubernetes.
 - [ ] **Monolithes modulaires** :
   - Identifier les cas où ils sont pertinents.
+- [ ] Sanity.io et Directus
 
 #### **Bases de données**
 - [ ] **SQL** :
   - PostgreSQL (optimisation, transactions, PL/pgSQL).
+  - Supabase (alternative PostgreSQL as a Service) ou Firebase pour des projets agiles, Planetscale
 - [ ] **NoSQL** :
   - MongoDB, Redis, Cassandra.
 - [ ] **ORMs** :
@@ -118,7 +124,8 @@
 #### **Intelligence Artificielle**
 - [ ] **TensorFlow.js** :
   - Intégration de modèles d'IA dans des applications web.
-  - Traitement en temps réel des données utilisateur pour des interactions dynamiques.   
+  - Traitement en temps réel des données utilisateur pour des interactions dynamiques.
+  - IA légère intégrée au frontend
 
 ---
 
@@ -199,10 +206,11 @@
   - Déploiement, scaling, monitoring.
 - [ ] **Cloud** :
   - AWS : EC2, S3, RDS, Lambda.
+  - AWS Lambda, Netlify, Vercel ( Se concentrer peut être plus dessus pour ce qui pourrait correspondre plus a mon workflow )
   - Infrastructure as Code : Terraform, Ansible.
 
 ### **CI/CD**
-- [ ] Pipelines avec Jenkins, GitHub Actions, GitLab CI.
+- [ ] Pipelines avec Jenkins (vieillissant), GitHub Actions, GitLab CI.
 - [ ] Automatisation des tests et déploiements.
 
 ### **Monitoring et observabilité**
@@ -240,6 +248,19 @@
 4. [ ] **Déploiement conteneurisé** : Conteneuriser une application et la déployer sur AWS.
 5. [ ] **Animation faciale en 3D en temps réel** : Développement d'un avatar interactif réagissant aux expressions faciales de l'utilisateur via la webcam.
 6. [ ] **Serious game éducatif interactif** : Création d'un jeu éducatif adaptatif utilisant l'IA pour personnaliser le contenu en fonction des performances de l'utilisateur.
+
+
+## **Court terme :**
+- Focus sur Next.js, Tailwind CSS, GSAP/Framer Motion pour des sites web performants et interactifs.
+- Crée des démos Three.js/R3F pour poser les bases des expériences immersives.
+
+## **Moyen terme :**
+- Explore TensorFlow.js pour des intégrations IA simples.
+- Crée un projet complet combinant WebGL et interactivité dynamique (ex. un portfolio interactif).
+  
+## **Long terme :**
+- Maîtrise WebGPU, qui remplacera WebGL pour des performances 3D accrues.
+- Approfondis les bases d’IA et développe des outils innovants (serious games, simulateurs).
 
 ---
 
