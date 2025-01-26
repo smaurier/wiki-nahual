@@ -57,6 +57,7 @@
 #### **Graphismes avancés** (optionnel)
 - [ ] **WebGL avec Three.js (R3F, intro a WebGPU)** :
   - Création de visualisations 3D interactives.
+  - Introduction à WebGPU pour des performances accrues.
 - [ ] **Canvas API** :
   - Animation graphique dynamique.
 - [ ] **GSAP et Framer Motion** :
@@ -113,6 +114,11 @@
 #### **DevOps backend**
 - [ ] Logs : ELK Stack, Winston.
 - [ ] Monitoring avec Prometheus, Grafana.
+
+#### **Intelligence Artificielle**
+- [ ] **TensorFlow.js** :
+  - Intégration de modèles d'IA dans des applications web.
+  - Traitement en temps réel des données utilisateur pour des interactions dynamiques.   
 
 ---
 
@@ -232,6 +238,8 @@
 2. [ ] **Gestionnaire de tâches SPA** : Une application React avec Redux et TypeScript.
 3. [ ] **Pipeline Kafka** : Simuler un flux de messages entre microservices.
 4. [ ] **Déploiement conteneurisé** : Conteneuriser une application et la déployer sur AWS.
+5. [ ] **Animation faciale en 3D en temps réel** : Développement d'un avatar interactif réagissant aux expressions faciales de l'utilisateur via la webcam.
+6. [ ] **Serious game éducatif interactif** : Création d'un jeu éducatif adaptatif utilisant l'IA pour personnaliser le contenu en fonction des performances de l'utilisateur.
 
 ---
 
