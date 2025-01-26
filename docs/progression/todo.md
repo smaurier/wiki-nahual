@@ -54,7 +54,7 @@
 - [ ] **Audits Lighthouse** :
   - Mesurer les performances, le SEO et l'accessibilité.
 
-#### **Graphismes avancés** (optionnel)
+#### **Graphismes avancés**
 - [ ] **WebGL avec Three.js (R3F (React Three Fiber), intro a WebGPU)** :
   - Création de visualisations 3D interactives.
   - Introduction à WebGPU pour des performances accrues.
